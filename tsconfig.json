@@ -1,0 +1,17 @@
+{
+  "exclude": [                                /* Specifies a list of files to be excluded from compilation. */
+    "node_modules",
+    "**/*.spec.js"
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",                           /* Base directory to resolve non-relative module names. */
+    "moduleResolution": "Node",
+    "module": "amd",
+    "declaration": true,                      /* Generates corresponding '.d.ts' file. */
+    "noEmit": false,                          /* Do not emit outputs. */
+    "emitDeclarationOnly": true,              /* Only emit .d.ts files; do not emit .js files. */
+    "allowJs": true,                          /* Allow javascript files to be compiled. */
+    "checkJs": true,
+    "resolveJsonModule": true
+  }
+}

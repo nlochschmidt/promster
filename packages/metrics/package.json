@@ -3,8 +3,10 @@
   "version": "4.1.2",
   "description": "Metrics utilities used by all other server integrations",
   "main": "modules/index.js",
+  "typings": "dist/modules/index.d.ts",
   "scripts": {
     "prebuild": "rimraf dist/**",
+    "build:declarations": "tsc -p tsconfig.json",
     "build": "exit 0"
   },
   "files": [
@@ -40,6 +42,9 @@
     "optional": "0.1.4",
     "url": "0.11.0",
     "url-value-parser": "2.0.1"
+  },
+  "devDependencies": {
+    "prom-client": "12.0.0"
   },
   "optionalDependencies": {
     "gc-stats": "1.4.0"
